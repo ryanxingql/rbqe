@@ -45,7 +45,7 @@ MATLAB R2019b.
 
 We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
 
-All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) as well as [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89). For demo, we prepare only 5 raw TIFF images.
+All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)). For demo, we prepare only 5 raw TIFF images.
 
 **Overview**
 
@@ -70,11 +70,11 @@ To generate JPEG-compressed test set:
 1. `python main_JPEG_compression.py`: Compress these images with 5 different QFs: 10, 20, 30, 40 and 50. Then we get 5 JPEG images for each raw image.
 2. `main_jpeg2yuv420p.m`: Center-crop these images into `512x512` images, and stack them into 5 YUV videos: `RAISE_raw_512x512_test_jpeg.yuv`, `RAISE_qf10_512x512_test_jpeg.yuv`, `RAISE_qf20_512x512_test_jpeg.yuv`, `RAISE_qf30_512x512_test_jpeg.yuv`, `RAISE_qf40_512x512_test_jpeg.yuv`, and `RAISE_qf50_512x512_test_jpeg.yuv`.
 
-All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) as well as [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89).
+All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
 
 ## Test
 
-Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) or [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89).
+Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
 
 **Overview**
 
@@ -96,7 +96,7 @@ Note: we use `T=0.89` for 1000-image HEVC dataset in our paper and `T=0.79` for 
 
 Note 2: the curve may not be smooth, since we have only 5 images here.
 
-All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) as well as [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89).
+All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
 
 ## Training
 
