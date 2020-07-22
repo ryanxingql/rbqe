@@ -11,8 +11,8 @@
 **Highlights**
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
-- A **dynamic** network with **early-exit** mechanism for easy input.
-- A **Tchebichef-moments** based **NR-IQA** approach for early-exit determination. This IQA approach is highly interpretable and sensitive to blocking energy detection.
+- A **multi-output dynamic** network with **early-exit** mechanism for easy input.
+- A **Tchebichef-moments** based **NR-IQA** approach for early-exit decision. This IQA approach is highly interpretable and sensitive to blocking energy detection.
 
 ## Paper
 
