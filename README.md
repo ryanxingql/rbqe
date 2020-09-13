@@ -8,6 +8,7 @@
   - [2. Test](#2-test)
   - [3. Training](#3-training)
   - [4. License & Citation](#4-license--citation)
+  - [5. See more](#5-see-more)
 
 ## 0. Background
 
@@ -103,3 +104,14 @@ month = {August},
 year = {2020}
 }
 ```
+
+## 5. See more
+
+- [PyTorch implementation of STDF (AAAI 2020)](https://github.com/RyanXingQL/STDF-PyTorch)
+  - A **simple** yet **effective** video quality enhancement network.
+  - Adopt **feature alignment** by multi-frame **deformable convolutions**, instead of motion estimation and motion compensation.
+
+- [MFQEv2 (TPAMI 2019)](https://github.com/RyanXingQL/MFQEv2.0)
+  - The first **multi-frame** quality enhancement approach for compressed videos.
+  - The first to consider and utilize the **quality fluctuation** feature of compressed videos.
+  - Enhance low-quality frames using **neighboring high-quality** frames.
