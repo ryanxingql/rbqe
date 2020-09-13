@@ -1,35 +1,27 @@
 # Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)
 
 - [Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)](#early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
-  - [Paper](#paper)
-  - [Environment](#environment)
-  - [Data preparation](#data-preparation)
-  - [Test](#test)
-  - [Training](#training)
-  - [License](#license)
+  - [0. Background](#0-background)
+  - [1. Pre-request](#1-pre-request)
+    - [1.1. Environment](#11-environment)
+    - [1.2. Data](#12-data)
+  - [2. Test](#2-test)
+  - [3. Training](#3-training)
+  - [4. License & Citation](#4-license--citation)
 
-**Highlights**
+## 0. Background
+
+Official repository of [Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images](https://arxiv.org/abs/2006.16581), ECCV 2020.
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
 - A **Tchebichef-moments** based **NR-IQA** approach for early-exit decision. This IQA approach is highly interpretable and sensitive to blocking energy detection.
 
-## Paper
+Feel free to contact: ryanxingql@gmail.com.
 
-[[arXiv]](https://arxiv.org/abs/2006.16581)
+## 1. Pre-request
 
-If you find this work helpful, you may cite (BibTeX):
-```
-@InProceedings{Xing_2020_ECCV,
-author = {Xing, Qunliang and Xu, Mai and Li, Tianyi and Guan, Zhenyu},
-title = {Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
-booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-month = {August},
-year = {2020}
-}
-```
-
-## Environment
+### 1.1. Environment
 
 Python 3.6, PyTorch > 1.0, Pillow, Imageio:
 
@@ -41,11 +33,11 @@ conda install -c pytorch pytorch=1.5
 
 MATLAB R2019b.
 
-## Data preparation
+### 1.2. Data
 
 We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
 
-All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)). For demo, we prepare only 5 raw TIFF images.
+All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/93D1D94FD95BC0E5199AFAD646E6D55D)). For demo, we prepare only 5 raw TIFF images.
 
 **Overview**
 
@@ -70,11 +62,9 @@ To generate JPEG-compressed test set:
 1. `python main_JPEG_compression.py`: Compress these images with 5 different QFs: 10, 20, 30, 40 and 50. Then we get 5 JPEG images for each raw image.
 2. `main_jpeg2yuv420p.m`: Center-crop these images into `512x512` images, and stack them into 5 YUV videos: `RAISE_raw_512x512_test_jpeg.yuv`, `RAISE_qf10_512x512_test_jpeg.yuv`, `RAISE_qf20_512x512_test_jpeg.yuv`, `RAISE_qf30_512x512_test_jpeg.yuv`, `RAISE_qf40_512x512_test_jpeg.yuv`, and `RAISE_qf50_512x512_test_jpeg.yuv`.
 
-All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
+## 2. Test
 
-## Test
-
-Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
+Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/93D1D94FD95BC0E5199AFAD646E6D55D)).
 
 **Overview**
 
@@ -96,12 +86,20 @@ Note: we use `T=0.89` for 1000-image HEVC dataset in our paper and `T=0.79` for 
 
 Note 2: the curve may not be smooth, since we have only 5 images here.
 
-All files above are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/49EC78C258F9E5462A5F3A58F2EEEC89)).
-
-## Training
+## 3. Training
 
 We are going to release a better version of training code in our extended work.
 
-## License
+## 4. License & Citation
 
 You can **use, redistribute, and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
+
+```tex
+@InProceedings{RBQE,
+author = {Xing, Qunliang and Xu, Mai and Li, Tianyi and Guan, Zhenyu},
+title = {Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
+booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+month = {August},
+year = {2020}
+}
+```
