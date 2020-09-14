@@ -4,7 +4,8 @@
   - [0. Background](#0-background)
   - [1. Pre-request](#1-pre-request)
     - [1.1. Environment](#11-environment)
-    - [1.2. Data](#12-data)
+    - [1.2. Data and pre-trained models](#12-data-and-pre-trained-models)
+    - [1.3. Compress images](#13-compress-images)
   - [2. Test](#2-test)
   - [3. Training](#3-training)
   - [4. License & Citation](#4-license--citation)
@@ -34,11 +35,13 @@ conda install -c pytorch pytorch=1.5
 
 MATLAB R2019b.
 
-### 1.2. Data
+### 1.2. Data and pre-trained models
+
+All files below are prepared in [[Google Drive]](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (For Chinese researchers: [[百度网盘]](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg), 提取码rbqe). For demo, we prepare only 5 raw TIFF images.
+
+### 1.3. Compress images
 
 We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
-
-All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (For Chinese researchers: [百度网盘](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg), 提取码rbqe). For demo, we prepare only 5 raw TIFF images.
 
 **Overview**
 
@@ -64,8 +67,6 @@ To generate JPEG-compressed test set:
 2. `main_jpeg2yuv420p.m`: Center-crop these images into `512x512` images, and stack them into 5 YUV videos: `RAISE_raw_512x512_test_jpeg.yuv`, `RAISE_qf10_512x512_test_jpeg.yuv`, `RAISE_qf20_512x512_test_jpeg.yuv`, `RAISE_qf30_512x512_test_jpeg.yuv`, `RAISE_qf40_512x512_test_jpeg.yuv`, and `RAISE_qf50_512x512_test_jpeg.yuv`.
 
 ## 2. Test
-
-Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (For Chinese researchers: [百度网盘](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg), 提取码rbqe).
 
 **Overview**
 
