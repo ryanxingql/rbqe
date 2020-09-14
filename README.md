@@ -38,7 +38,7 @@ MATLAB R2019b.
 
 We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
 
-All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/93D1D94FD95BC0E5199AFAD646E6D55D)). For demo, we prepare only 5 raw TIFF images.
+All files below are prepared in [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (For Chinese researchers: [百度网盘](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg), 提取码rbqe). For demo, we prepare only 5 raw TIFF images.
 
 **Overview**
 
@@ -65,7 +65,7 @@ To generate JPEG-compressed test set:
 
 ## 2. Test
 
-Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (Chinese researchers: [北航网盘](https://bhpan.buaa.edu.cn:443/link/93D1D94FD95BC0E5199AFAD646E6D55D)).
+Download the pre-trained models at [Google Drive](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) (For Chinese researchers: [百度网盘](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg), 提取码rbqe).
 
 **Overview**
 
