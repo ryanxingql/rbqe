@@ -1,6 +1,6 @@
-# Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)
+# Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)
 
-- [Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)](#early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
+- [Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images (ECCV 2020)](#early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
   - [0. Background](#0-background)
   - [1. Pre-request](#1-pre-request)
     - [1.1. Environment](#11-environment)
@@ -13,7 +13,7 @@
 
 ## 0. Background
 
-Official repository of [Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images](https://arxiv.org/abs/2006.16581), ECCV 2020.
+Official repository of [Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images](https://arxiv.org/abs/2006.16581), ECCV 2020.
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
@@ -99,7 +99,7 @@ You can **use, redistribute, and adapt** the material for **non-commercial purpo
 ```tex
 @InProceedings{RBQE,
 author = {Xing, Qunliang and Xu, Mai and Li, Tianyi and Guan, Zhenyu},
-title = {Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
+title = {Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
 booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
 month = {August},
 year = {2020}
