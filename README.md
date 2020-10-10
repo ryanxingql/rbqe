@@ -97,12 +97,15 @@ We are going to release a better version of training code in our extended work.
 You can **use, redistribute, and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
 
 ```tex
-@InProceedings{RBQE,
-author = {Xing, Qunliang and Xu, Mai and Li, Tianyi and Guan, Zhenyu},
-title = {Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
-booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-month = {August},
-year = {2020}
+@incollection{RBQE,
+	doi = {10.1007/978-3-030-58517-4_17},
+	url = {https://doi.org/10.1007%2F978-3-030-58517-4_17},
+	year = 2020,
+	publisher = {Springer International Publishing},
+	pages = {275--292},
+	author = {Qunliang Xing and Mai Xu and Tianyi Li and Zhenyu Guan},
+	title = {Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
+	booktitle = {Computer Vision {\textendash} {ECCV} 2020}
 }
 ```
 
