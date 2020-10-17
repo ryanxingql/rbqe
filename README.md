@@ -19,6 +19,8 @@ Official repository of [Early Exit or Not: Resource-Efficient Blind Quality Enha
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
 - A **Tchebichef-moments** based **NR-IQA** approach for early-exit decision. This IQA approach is highly interpretable and sensitive to blocking energy detection.
 
+![network](network.png)
+
 Feel free to contact: ryanxingql@gmail.com.
 
 ## 1. Pre-request
@@ -87,6 +89,8 @@ To generate JPEG-compressed test set:
 Note: we use `T=0.89` for 1000-image HEVC dataset in our paper and `T=0.79` for 1000-image JPEG dataset in our paper. Here we have only 5 images, and the threshold `T` is re-chosen according to the curve.
 
 Note 2: the curve may not be smooth, since we have only 5 images here.
+
+![result](FLOPs_2.png)
 
 ## 3. Training
 
