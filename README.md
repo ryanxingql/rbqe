@@ -19,7 +19,7 @@ Official repository of [Early Exit or Not: Resource-Efficient Blind Quality Enha
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
 - A **Tchebichef-moments** based **NR-IQA** approach for early-exit decision. This IQA approach is highly interpretable and sensitive to blocking energy detection.
 
-![network](network.png)
+![network](https://user-images.githubusercontent.com/34084019/105739729-637dd200-5f73-11eb-923a-bb67ee9959eb.png)
 
 Feel free to contact: ryanxingql@gmail.com.
 
@@ -29,7 +29,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 Python 3.6, PyTorch > 1.0, Pillow, Imageio:
 
-```
+```bash
 conda create -n rbqe python=3.6 pillow=7.1.2 libtiff=4.1.0 imageio=2.9.0
 conda activate rbqe
 conda install -c pytorch pytorch=1.5
@@ -59,12 +59,14 @@ We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download 
 **Specifically**
 
 To generate HEVC-MSP-compressed test set:
+
 1. `main_tiff2yuv420p.m`: Center-crop these images into `512x512` images, and stack them into a single YUV video.
 2. `main_compress.bat` (Windows system): Compress this yuv with 5 different QPs: 22, 27, 32, 37 and 42. Then we get 5 YUV videos: `RAISE_qp22_512x512_test.yuv`, `RAISE_qp27_512x512_test.yuv`, `RAISE_qp32_512x512_test.yuv`, `RAISE_qp37_512x512_test.yuv`, and `RAISE_qp42_512x512_test.yuv`.
 
 Note: you can also compress the YUV video on Ubuntu system using `main_compress.sh`.
 
 To generate JPEG-compressed test set:
+
 1. `python main_JPEG_compression.py`: Compress these images with 5 different QFs: 10, 20, 30, 40 and 50. Then we get 5 JPEG images for each raw image.
 2. `main_jpeg2yuv420p.m`: Center-crop these images into `512x512` images, and stack them into 5 YUV videos: `RAISE_raw_512x512_test_jpeg.yuv`, `RAISE_qf10_512x512_test_jpeg.yuv`, `RAISE_qf20_512x512_test_jpeg.yuv`, `RAISE_qf30_512x512_test_jpeg.yuv`, `RAISE_qf40_512x512_test_jpeg.yuv`, and `RAISE_qf50_512x512_test_jpeg.yuv`.
 
@@ -90,7 +92,7 @@ Note: we use `T=0.89` for 1000-image HEVC dataset in our paper and `T=0.79` for 
 
 Note 2: the curve may not be smooth, since we have only 5 images here.
 
-![result](FLOPs_2.png)
+![result](https://user-images.githubusercontent.com/34084019/105739748-68428600-5f73-11eb-9195-959682b67981.png)
 
 ## 3. Training
 
