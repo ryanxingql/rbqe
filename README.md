@@ -13,7 +13,7 @@
 
 ## 0. Background
 
-Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
+Official repository of [[*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*]](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
@@ -121,11 +121,11 @@ You can **use, redistribute, and adapt** the material for **non-commercial purpo
 
 ## 5. See more
 
-- [PyTorch implementation of STDF (AAAI 2020)](https://github.com/RyanXingQL/STDF-PyTorch)
+- [[PyTorch implementation of STDF (AAAI 2020)]](https://github.com/RyanXingQL/STDF-PyTorch)
   - A **simple** yet **effective** video quality enhancement network.
   - Adopt **feature alignment** by multi-frame **deformable convolutions**, instead of motion estimation and motion compensation.
 
-- [MFQEv2 (TPAMI 2019)](https://github.com/RyanXingQL/MFQEv2.0)
+- [[MFQEv2 (TPAMI 2019)]](https://github.com/RyanXingQL/MFQEv2.0)
   - The first **multi-frame** quality enhancement approach for compressed videos.
   - The first to consider and utilize the **quality fluctuation** feature of compressed videos.
   - Enhance low-quality frames using **neighboring high-quality** frames.
