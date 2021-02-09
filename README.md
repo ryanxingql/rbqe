@@ -13,7 +13,7 @@
 
 ## 0. Background
 
-Official repository of [[*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*]](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
+Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
@@ -21,13 +21,13 @@ Official repository of [[*Early Exit or Not: Resource-Efficient Blind Quality En
 
 ![network](https://user-images.githubusercontent.com/34084019/105739729-637dd200-5f73-11eb-923a-bb67ee9959eb.png)
 
-Feel free to contact: ryanxingql@gmail.com.
+Feel free to contact: <ryanxingql@gmail.com>.
 
 ## 1. Pre-request
 
 ### 1.1. Environment
 
-Python 3.6, PyTorch > 1.0, Pillow, Imageio:
+PYTHON 3.6, PYTORCH > 1.0, PILLOW, IMAGEIO:
 
 ```bash
 conda create -n rbqe python=3.6 pillow=7.1.2 libtiff=4.1.0 imageio=2.9.0
@@ -43,11 +43,11 @@ All files below are prepared in [[Google Drive]](https://drive.google.com/drive/
 
 ### 1.3. Compress images
 
-We use [[RAISE]](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
+We use [RAISE](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Download the TIFF images in RAISE, or prepare your own raw images.
 
 <details>
-
 <summary><b>Overview</b></summary>
+<p>
 
 - To generate HEVC-MSP-compressed test set:
   - center-crop raw images into `512x512`, considering that some compared approaches can not process larger images with prevalent GPUs.
@@ -58,6 +58,7 @@ We use [[RAISE]](http://loki.disi.unitn.it/RAISE/) as raw image dataset. Downloa
   - center-crop raw images into `512x512`.
   - stack images with the same QF into one YUV video. Therefore, 5 QFs correspond to 5 compressed YUV videos. Besides, raw images are also stacked into a raw YUV video (this video may be different from the raw video for HEVC experiment because the image order may be different).
 
+</p>
 </details>
 
 To generate HEVC-MSP-compressed test set:
@@ -75,13 +76,14 @@ To generate JPEG-compressed test set:
 ## 2. Test
 
 <details>
-
 <summary><b>Overview</b></summary>
+<p>
 
 - Test all compressed YUV videos (actually compressed images in batches). For each compressed image, we obtain 5 enhanced images corresponding to 5 outputs of the network. Note that we do not use early-exit in this step, because we want to observe the PSNR vs. FLOPs performance under different threshold `T` in the next step. Therefore, the ave result in this step is not the final result.
 - Evaluate quality score of each enhanced images by our Tchebichef-moments based IQA model.
 - Generate the final PSNR vs. FLOPs result under one chosen threshold `T`.
 
+</p>
 </details>
 
 1. `python main_test.py -t HEVC -g 0`: test HEVC-compressed images, using gpu 0.
@@ -121,11 +123,11 @@ You can **use, redistribute, and adapt** the material for **non-commercial purpo
 
 ## 5. See more
 
-- [[PyTorch implementation of STDF (AAAI 2020)]](https://github.com/RyanXingQL/STDF-PyTorch)
-  - A **simple** yet **effective** video quality enhancement network.
+- [PyTorch implementation of STDF (AAAI 2020)](https://github.com/RyanXingQL/STDF-PyTorch)
+  - A **simple** and **effective** video quality enhancement network.
   - Adopt **feature alignment** by multi-frame **deformable convolutions**, instead of motion estimation and motion compensation.
 
-- [[MFQEv2 (TPAMI 2019)]](https://github.com/RyanXingQL/MFQEv2.0)
+- [MFQEv2 (TPAMI 2019)](https://github.com/RyanXingQL/MFQEv2.0)
   - The first **multi-frame** quality enhancement approach for compressed videos.
   - The first to consider and utilize the **quality fluctuation** feature of compressed videos.
   - Enhance low-quality frames using **neighboring high-quality** frames.
