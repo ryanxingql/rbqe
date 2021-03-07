@@ -27,10 +27,10 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 ### 1.1. Environment
 
-PYTHON 3.6, PYTORCH > 1.0, PILLOW, IMAGEIO:
+PYTHON 3.7, PYTORCH > 1.0, PILLOW, IMAGEIO:
 
 ```bash
-conda create -n rbqe python=3.6 pillow=7.1.2 libtiff=4.1.0 imageio=2.9.0
+conda create -n rbqe python=3.7 pillow=7.1.2 libtiff=4.1.0 imageio=2.9.0
 conda activate rbqe
 conda install -c pytorch pytorch=1.5
 ```
