@@ -2,3 +2,4 @@ data/*
 model/*
 out/*
 .vscode/
+__pycache__/
