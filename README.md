@@ -109,7 +109,7 @@ We are going to release a better version of training code in our extended work.
 You can **use, redistribute, and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
 
 ```tex
-@incollection{RBQE,
+@incollection{RBQE_xing_2020,
 	doi = {10.1007/978-3-030-58517-4_17},
 	url = {https://doi.org/10.1007%2F978-3-030-58517-4_17},
 	year = 2020,
