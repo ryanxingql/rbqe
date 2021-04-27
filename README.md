@@ -9,9 +9,8 @@
   - [2. Test](#2-test)
   - [3. Training](#3-training)
   - [4. License & Citation](#4-license--citation)
-  - [5. See more](#5-see-more)
 
-**Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also released.
+:rocket: **Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also released.
 
 ## 0. Background
 
@@ -122,14 +121,3 @@ You can **use, redistribute, and adapt** the material for **non-commercial purpo
 	booktitle = {Computer Vision {\textendash} {ECCV} 2020}
 }
 ```
-
-## 5. See more
-
-- [PyTorch implementation of STDF (AAAI 2020)](https://github.com/RyanXingQL/STDF-PyTorch)
-  - A **simple** and **effective** video quality enhancement network.
-  - Adopt **feature alignment** by multi-frame **deformable convolutions**, instead of motion estimation and motion compensation.
-
-- [MFQEv2 (TPAMI 2019)](https://github.com/RyanXingQL/MFQEv2.0)
-  - The first **multi-frame** quality enhancement approach for compressed videos.
-  - The first to consider and utilize the **quality fluctuation** feature of compressed videos.
-  - Enhance low-quality frames using **neighboring high-quality** frames.
