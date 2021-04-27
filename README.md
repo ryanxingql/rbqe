@@ -11,7 +11,7 @@
   - [4. License & Citation](#4-license--citation)
   - [5. See more](#5-see-more)
 
-**Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE).
+**Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also released.
 
 ## 0. Background
 
