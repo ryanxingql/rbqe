@@ -11,6 +11,8 @@
   - [4. License & Citation](#4-license--citation)
   - [5. See more](#5-see-more)
 
+**Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE).
+
 ## 0. Background
 
 Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
@@ -102,7 +104,7 @@ To generate JPEG-compressed test set:
 
 ## 3. Training
 
-We are going to release a better version of training code in our extended work.
+See [PowerQE](https://github.com/RyanXingQL/PowerQE).
 
 ## 4. License & Citation
 
