@@ -40,7 +40,7 @@ MATLAB R2019b.
 
 ### 1.2. Data and pre-trained models
 
-All files below are prepared in [[Google Drive]](https://drive.google.com/drive/folders/16cAPczm_FQT5-U636QdzUXaQZikc6VeO?usp=sharing) [[百度网盘 (rbqe)]](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg). For demo, we prepare only 5 raw TIFF images.
+All files below are prepared in GitHub Releases or [[百度网盘 (rbqe)]](https://pan.baidu.com/s/1U9BtmZVxno_ZAON17XRBjg). For demo, we prepare only 5 raw TIFF images.
 
 ### 1.3. Compress images
 
