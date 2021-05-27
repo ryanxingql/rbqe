@@ -10,7 +10,7 @@
   - [3. Training](#3-training)
   - [4. License & Citation](#4-license--citation)
 
-:rocket: **Update** (21/4/27): We release the training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also released.
+:rocket: **Update** (21/4/27): We release the improved RBQE, training code and Python-based IQA module at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also released.
 
 ## 0. Background
 
