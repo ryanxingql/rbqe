@@ -1,4 +1,6 @@
-function [score_quality] = cal_QualityScore(img, type)
+function [score_quality] = main(img, type)
+% img: (H W) 0-255 grayscale image.
+% type: HEVC or JPEG.
 
 %% Settings
 if type == "HEVC"

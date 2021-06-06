@@ -1,5 +1,4 @@
-data/*
-model/*
-out/*
 .vscode/
+.idea/
+
 __pycache__/
