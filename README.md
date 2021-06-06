@@ -1,10 +1,10 @@
 # *Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)
 
 - [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)](#early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
-  - [0. Background](#0-background)
-  - [1. Codes and Pre-trained Models](#1-codes-and-pre-trained-models)
-  - [2. Difference from the Paper](#2-difference-from-the-paper)
-  - [3. License & Citation](#3-license--citation)
+	- [0. Background](#0-background)
+	- [1. Codes & Pre-trained Models](#1-codes--pre-trained-models)
+	- [2. Difference from the Paper](#2-difference-from-the-paper)
+	- [3. License & Citation](#3-license--citation)
 
 ## 0. Background
 
@@ -18,7 +18,7 @@ Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enh
 
 Feel free to contact: `ryanxingql@gmail.com`.
 
-## 1. Codes and Pre-trained Models
+## 1. Codes & Pre-trained Models
 
 To unify most of the quality enhancement approaches, we have released the improved RBQE at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also presented there.
 
