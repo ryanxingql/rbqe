@@ -20,6 +20,8 @@ Feel free to contact: `ryanxingql@gmail.com`.
 
 ## 1. Codes & Pre-trained Models
 
+[[Previous Version]](https://github.com/RyanXingQL/RBQE/tree/34c961d4df7dea3882297601836b245d0b552739)
+
 To unify most of the quality enhancement approaches, we have released the improved RBQE at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also presented there.
 
 A Python-based image quality assessment module (IQAM) is provided at [PowerQE](https://github.com/RyanXingQL/PowerQE). The MATLAB-based IQAM is provided at this repository, which is much, much faster.
