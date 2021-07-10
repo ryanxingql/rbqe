@@ -28,9 +28,11 @@ A Python-based image quality assessment module (IQAM) is provided at [PowerQE](h
 4. **Image quality assessment (IQA)**. In the paper, the IQA is conducted on the Y channel, and the threshold of IQA module (IQAM) is determined according to the Y performance. In [PowerQE](https://github.com/RyanXingQL/PowerQE), we conduct IQA on R channel for simplicity and then set the threshold.
 5. **IQA implementation**. In [PowerQE](https://github.com/RyanXingQL/PowerQE), a Python-based IQAM is provided for an end-to-end Python experience. In the paper, we use a MATLAB-based IQAM, which is much faster but independent of the Python-based enhancement model. The MATLAB-based IQAM is provided at this repository. Note that the thresholds are different between two versions.
 
-## 3. License & Citation
+## 3. License
 
-You can **use, redistribute, and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
+We adopt Apache License v2.0.
+
+If you find this repository helpful, you may cite:
 
 ```tex
 @incollection{RBQE_xing_2020,
