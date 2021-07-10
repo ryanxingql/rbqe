@@ -2,7 +2,7 @@
 
 ## 0. Background
 
-Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览 (中文)]](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
+Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览]](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
@@ -12,9 +12,9 @@ Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enh
 
 Feel free to contact: `ryanxingql@gmail.com`.
 
-## 1. Codes & Pre-trained Models
+## 1. Code & Pre-trained Model
 
-[[Previous Version]](https://github.com/RyanXingQL/RBQE/tree/34c961d4df7dea3882297601836b245d0b552739)
+[[Previous Formal Version]](https://github.com/RyanXingQL/RBQE/tree/34c961d4df7dea3882297601836b245d0b552739)
 
 To unify most of the quality enhancement approaches, we have released the improved RBQE at [PowerQE](https://github.com/RyanXingQL/PowerQE). Codes of all compared approaches are also presented there.
 
