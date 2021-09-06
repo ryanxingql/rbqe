@@ -35,7 +35,7 @@ We adopt Apache License v2.0.
 If you find this repository helpful, you may cite:
 
 ```tex
-@incollection{RBQE_xing_2020,
+@incollection{2020xing,
 	doi = {10.1007/978-3-030-58517-4_17},
 	url = {https://doi.org/10.1007%2F978-3-030-58517-4_17},
 	year = 2020,
