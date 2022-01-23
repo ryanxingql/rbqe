@@ -14,21 +14,25 @@ Feel free to contact: `ryanxingql@gmail.com`.
 
 ## 1. Code & Pre-trained Model
 
-[[Previous formal version]](https://github.com/ryanxingql/rbqe/tree/34c961d4df7dea3882297601836b245d0b552739)
+We have released two versions of the RBQE approach.
 
-To unify most of the quality enhancement approaches, we have released the improved RBQE at [PowerQE](https://github.com/ryanxingql/powerqe). Codes of all compared approaches are also presented there.
+1. [[ECCV paper version]](https://github.com/ryanxingql/rbqe/tree/34c961d4df7dea3882297601836b245d0b552739)
+   1. adopts the RAISE data-set (high-quality and large-scale).
+   2. adopts the HM software for compression and get YUV images.
+   3. enhances only Y channel and report the Y-PSNR result (in accordance to previous papers).
+   4. implements the image quality assessment module with MATLAB (convenient for visualization).
+   5. assesses the Y quality; the IQA threshold is determined according to the Y performance.
 
-A Python-based image quality assessment module (IQAM) is provided at [PowerQE](https://github.com/ryanxingql/powerqe). The MATLAB-based IQAM is provided at this repository, which is much, much faster.
+2. [[Improved version]](https://github.com/ryanxingql/powerqe)
+   1. adopts the DIV2K data-set (used by most image restoration approaches).
+   2. adopts the BPG software for compression (faster, but the result is different to that of the HM) and get PNG images (simpler).
+   3. enhances RGB channels (more practical).
+   4. re-implements the MATLAB-based image quality assessment module with Python (much, much slower than the MATLAB version).
+   5. assesses the R quality; the IQA threshold is determined according to the R performance.
 
-## 2. Difference from the Paper
+We have released the codes of all compared approaches in the latter repository.
 
-1. **Dataset**. In the paper, we use the high-resolution RAISE dataset. In [PowerQE](https://github.com/ryanxingql/powerqe), the commonly-used DIV2K dataset is adopted for all approaches.
-2. **Image compression**. In the paper, we use HM software to obtain HEVC-compressed images. In [PowerQE](https://github.com/ryanxingql/powerqe), BPG is adopted to obtain compressed images, which is simpler.
-3. **YCbCr or RGB**. In the paper, we only enhance the Y channel and report the Y-PSNR result. In [PowerQE](https://github.com/ryanxingql/powerqe), since the input images are with PNG format, we enhance all R, G and B channels.
-4. **Image quality assessment (IQA)**. In the paper, the IQA is conducted on the Y channel, and the threshold of IQA module (IQAM) is determined according to the Y performance. In [PowerQE](https://github.com/ryanxingql/powerqe), we conduct IQA on R channel for simplicity and then set the threshold.
-5. **IQA implementation**. In [PowerQE](https://github.com/ryanxingql/powerqe), a Python-based IQAM is provided for an end-to-end Python experience. In the paper, we use a MATLAB-based IQAM, which is much faster but independent of the Python-based enhancement model. The MATLAB-based IQAM is provided at this repository. Note that the thresholds are different between two versions.
-
-## 3. License
+## 2. License
 
 We adopt Apache License v2.0.
 
