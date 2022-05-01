@@ -17,18 +17,18 @@ Feel free to contact: `ryanxingql@gmail.com`.
 We have released two versions of the RBQE approach.
 
 1. [[ECCV paper version]](https://github.com/ryanxingql/rbqe/tree/34c961d4df7dea3882297601836b245d0b552739)
-   1. adopts the RAISE data-set (high-quality and large-scale).
-   2. adopts the HM software for compression and get YUV images.
-   3. enhances only Y channel and report the Y-PSNR result (in accordance to previous papers).
-   4. implements the image quality assessment module with MATLAB (convenient for visualization).
-   5. assesses the Y quality; the IQA threshold is determined according to the Y performance.
+   1. Adopts the RAISE data-set (high-quality and large-scale).
+   2. Adopts the HM software for compression and get YUV images.
+   3. Enhances only Y channel and report the Y-PSNR result (in accordance to previous papers).
+   4. Implements the image quality assessment module with MATLAB (convenient for visualization).
+   5. Assesses the Y quality; the IQA threshold is determined according to the Y performance.
 
 2. [[Improved version]](https://github.com/ryanxingql/powerqe)
-   1. adopts the DIV2K data-set (used by most image restoration approaches).
-   2. adopts the BPG software for compression (faster, but the result is different to that of the HM) and get PNG images (simpler).
-   3. enhances RGB channels (more practical).
-   4. re-implements the MATLAB-based image quality assessment module with Python (much, much slower than the MATLAB version).
-   5. assesses the R quality; the IQA threshold is determined according to the R performance.
+   1. Adopts the DIV2K data-set (used by most image restoration approaches).
+   2. Adopts the BPG software for compression (faster, but the result is different to that of the HM) and get PNG images (simpler).
+   3. Enhances RGB channels (more practical).
+   4. Re-implements the MATLAB-based image quality assessment module with Python (no need to use MATLAB anymore; but much, much slower than the MATLAB version).
+   5. Assesses the R quality; the IQA threshold is determined according to the R performance.
 
 We have released the codes of all compared approaches in the latter repository.
 
