@@ -2,7 +2,8 @@
 
 ## 0. Background
 
-Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览]](https://github.com/ryanxingql/blog/blob/main/posts/rbqe.md)
+Official repository of [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*](https://arxiv.org/abs/2006.16581), ECCV 2020. [[速览]](https://github.com/ryanxingql/rbqe/blob/master/blog_zh.md)
+
 
 - A **single blind** enhancement model for HEVC/JPEG-compressed images with a **wide range** of Quantization Parameters (QPs) or Quality Factors (QFs).
 - A **multi-output dynamic** network with **early-exit** mechanism for easy input.
@@ -48,14 +49,5 @@ If you find this repository helpful, you may cite:
   author = {Qunliang Xing and Mai Xu and Tianyi Li and Zhenyu Guan},
   title = {Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
   booktitle = {Computer Vision {\textendash} {ECCV} 2020}
-}
-
-@software{2020xing_rbqe_implementation,
-  author = {Xing, Qunliang},
-  month = {7},
-  title = {{PyTorch implementation of RBQE}},
-  url = {https://github.com/ryanxingql/rbqe},
-  version = {1.0.0},
-  year = {2020}
 }
 ```
