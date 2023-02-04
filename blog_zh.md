@@ -1,10 +1,10 @@
-# 论文速览: *Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)
+# 论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)
 
 [[项目主页]](https://github.com/ryanxingql/rbqe) [[论文]](https://arxiv.org/abs/2006.16581)
 
 ## 目录
 
-- [论文速览: *Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)](#论文速览-early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
+- [论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (ECCV 2020)](#论文速览early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-images-eccv-2020)
   - [目录](#目录)
   - [1. 初衷](#1-初衷)
   - [2. 思路演化](#2-思路演化)
@@ -15,7 +15,7 @@
 
 ## 1. 初衷
 
-在19年 [MFQEv2](https://github.com/ryanxingql/mfqev2.0) 的工作中，我们要针对不同失真类型的压缩视频，训练同一结构、不同参数的深度网络模型。例如，对于 HEVC 压缩的 5 种典型配置（固定 QP 为 22、27、32、37、42 编码），我们需要训练 5 个深度网络模型。
+在 19 年 [MFQEv2](https://github.com/ryanxingql/mfqev2.0) 的工作中，我们要针对不同失真类型的压缩视频，训练同一结构、不同参数的深度网络模型。例如，对于 HEVC 压缩的 5 种典型配置（固定 QP 为 22、27、32、37、42 编码），我们需要训练 5 个深度网络模型。
 
 这种训练思路会导致两个实际问题：
 
