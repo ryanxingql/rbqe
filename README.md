@@ -36,18 +36,3 @@ We have released the codes of all compared approaches in the latter repository.
 ## 2. License
 
 We adopt Apache License v2.0.
-
-If you find this repository helpful, you may cite:
-
-```tex
-@incollection{2020xing_rbqe,
-  doi = {10.1007/978-3-030-58517-4_17},
-  url = {https://doi.org/10.1007%2F978-3-030-58517-4_17},
-  year = 2020,
-  publisher = {Springer International Publishing},
-  pages = {275--292},
-  author = {Qunliang Xing and Mai Xu and Tianyi Li and Zhenyu Guan},
-  title = {Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images},
-  booktitle = {Computer Vision {\textendash} {ECCV} 2020}
-}
-```
